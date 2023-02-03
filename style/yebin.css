@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login .top { position: relative; width: 329px; }
+.login .top li { padding: 0 0 9px; }
+.login .top li label { display: inline-block; width: 90px; font-size: 11px; color: #464646; font-family: dotum; font-weight: bold; }
+.login .top li input[type="text"],
+.login .top li input[type="password"]{ width: 144px; height: 29px; padding: 0; border-color: #d9d9d9; }
+.login .top li.btn { position: absolute; right: 0; top: 0; }
+.login .top li a { display: block; width:90px; height:67px; background: #eaa9e9; border: 1px solid #eaa9e9; font-size: 17px; color: #fff; text-align: center; line-height: 69px; font-weight: bold; }
+
+.login .btm li a { font-size: 9px; }
+
+/*
+body::before {
+    content: "";
+    position: absolute; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+*/
+
+/*
+.login .id-area { position: relative; width: 329px;}
+.login .id-area li { padding: 0 0 9px; }
+.login .id-area li label { display: inline-block; width: 80px; font-size: 12px; color: #464646; font-family: dotum; font-weight: bold; }
+.login .id-area li input[type="text"]
+*/
+
+.login-form { position: relative; z-index: 2;}
+.login-form h1 {
+    font-size: 32px; color: #fff;
+    text-align: center;
+}
+.id-area { width: 40px; }
+.id-area input {
+    width: 100%;
+    padding: 10px 5px 5px;
+    background-color: transparent;
+    border: rgb(214, 28, 28);
+    border-bottom: 1px solid rgb(27, 83, 174);
+    font-size: 18px; color: rgb(143, 231, 37);
+    outline: none;
+}
+
+.btn-area { margin-top: 30px; }
+.btn-area button {
+    width: 100%; height: 50px;
+    background: #166cea;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+}
