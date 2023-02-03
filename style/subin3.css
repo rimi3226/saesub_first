@@ -1,0 +1,126 @@
+/*폰트 - 영어*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR:wght@500&family=Roboto+Mono:wght@300&display=swap');
+
+/*폰트 - 한글*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR:wght@300&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+* {
+    margin: 0;
+    /* 마진 리셋 */
+    padding: 0;
+    /* 패딩 리셋 */
+    /*font-family: FiraCode;*/
+    box-sizing: border-box;
+    /* 박스 영역은 테두리까지 */
+  
+    /*폰트 설정*/
+    font-family: 'Noto Sans KR', sans-serif;
+  
+}
+
+a {
+  text-decoration: none;
+  /* 텍스트 링크 밑줄 없애기 */
+}
+
+ul {
+  list-style: none;
+}
+
+/*바디 전체*/
+#container {
+  margin: 0 auto;
+  /* 화면 중앙에 배치 */
+  width: 100%;
+  /* 너비 */
+  background-color: rgb(255, 255, 255);
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header {
+  width: 100%;
+  /*  너비 */
+  height: 100px;
+  /* 높이 */
+}
+
+/* 로고 */
+#logo {
+  /* 왼쪽으로 플로팅 */
+  width: 100%;
+  /*  너비 */
+  height: 50px;
+  /* 높이 */
+  line-height: 50px;
+  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left: 150px;
+  /* 왼쪽에 여백 */
+
+  background-color: rgb(220, 224, 255);
+
+}
+
+/*로고 폰트/색상*/
+#logo h1 {
+  float: left;
+  /*font-family: 'Merienda', cursive;*/
+  /* font-family: 'Lora', serif; */
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-weight: 700;
+  font-size: 35px;
+  /* 글자 크기 */
+  color: #fff;
+  /* 글자 색*/
+  /*text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  /* margin-right: 100px; */
+}
+
+#login{
+  float: right;
+  font-weight: 400;
+  padding-right: 150px;
+}
+
+#logo {
+  display: inline-block;
+  position: relative;
+  border-bottom: 0.5px solid rgb(205, 205, 205);
+}
+
+/* ------------------------------------------------------------------------------------- */
+#search {
+  margin-left: 52%;
+  display: inline-block;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------------------- */
+#logo #search img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+
+#user {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.img {
+    text-align: center;
+  position: absolute;
+  top: 0;
+  right: -200%;
+  bottom: 0;
+  left: -200%;
+}
