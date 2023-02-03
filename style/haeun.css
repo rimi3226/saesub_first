@@ -1,0 +1,503 @@
+/*폰트 - 영어*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR:wght@500&family=Roboto+Mono:wght@300&display=swap');
+
+/*폰트 - 한글*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR:wght@300&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+* {
+  margin: 0;
+  /* 마진 리셋 */
+  padding: 0;
+  /* 패딩 리셋 */
+  /*font-family: FiraCode;*/
+  box-sizing: border-box;
+  /* 박스 영역은 테두리까지 */
+
+  /*폰트 설정*/
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  /* 텍스트 링크 밑줄 없애기 */
+}
+
+ul {
+  list-style: none;
+}
+
+/*바디 전체*/
+#container {
+  margin: 0 auto;
+  /* 화면 중앙에 배치 */
+  width: 100%;
+  /* 너비 */
+  background-color: rgb(255, 255, 255);
+}
+
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
+header {
+  width: 100%;
+  /*  너비 */
+  height: 100px;
+  /* 높이 */
+}
+
+/* 로고 */
+#logo {
+  /* 왼쪽으로 플로팅 */
+  width: 100%;
+  /*  너비 */
+  height: 50px;
+  /* 높이 */
+  line-height: 50px;
+  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left: 150px;
+  /* 왼쪽에 여백 */
+
+  background-color: rgb(220, 224, 255);
+
+}
+
+/*로고 폰트/색상*/
+#logo h1 {
+  float: left;
+  /*font-family: 'Merienda', cursive;*/
+  /* font-family: 'Lora', serif; */
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-weight: 700;
+  font-size: 35px;
+  /* 글자 크기 */
+  color: #fff;
+  /* 글자 색*/
+  /*text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  /* margin-right: 100px; */
+}
+
+#login{
+  float: right;
+  font-weight: 400;
+  padding-right: 150px;
+}
+
+#logo {
+  display: inline-block;
+  position: relative;
+  border-bottom: 0.5px solid rgb(205, 205, 205);
+}
+
+/* ------------------------------------------------------------------------------------- */
+#search {
+  margin-left: 52%;
+  display: inline-block;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------------------- */
+#logo #search img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+input {
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  padding: 6px 13px;
+  font-size: 14px;
+  width: 300px;
+  font-weight: 200;
+}
+
+img {
+  position: relative;
+  width: 15px;
+  top: 10px;
+  /* margin: 0; */
+  margin-top: 2px;
+}
+
+/* 내비게이션 태그*/
+nav {
+  float: right;
+  /* 오른쪽으로 플로팅 */
+  width: 100%;
+  /*   너비 */
+  height: 50px;
+  /* 메뉴 영역 높이 */
+
+  /*중간에 맞추기*/
+  line-height: 50px;
+
+  /* 메뉴를 로고와 맞추기 */
+  padding-left: 150px;
+  border-bottom: 0.5px solid rgb(205, 205, 205);
+  /* background-color: rgb(183, 190, 248); */
+}
+
+/*id : topMenu*/
+#topMenu {
+  height: 50px;
+}
+
+#topMenu>li {
+  float: left;
+  /* 메뉴 항목을 왼쪽으로 플로팅 */
+  position: relative;
+}
+
+/*상단메뉴 설정*/
+#topMenu>li>a {
+  display: block;
+  /* 링크 텍스트는 블록으로 */
+  font-size: 1.1em;
+  color: rgb(175, 177, 183);
+  /* 글자 색 */
+  font-weight: 500;
+  /* 글자 굵기 */
+  /* 패딩 */
+  padding-right: 70px;
+}
+
+#topMenu>li>a:hover {
+  color: #8a86cc;
+  /*text-shadow:0 -2px #222;*/
+}
+
+
+/* 본문 */
+.contents {
+  width: 100%;
+  padding: 20px 150px;
+}
+
+main>section {
+  margin-top: 60px;
+}
+
+main h2 {
+  font-size: 1.5em;
+  line-height: 2.5;
+}
+
+main div {
+  margin-top: 20px;
+}
+
+main h3 {
+  font-size: 1.2em;
+  line-height: 2.2;
+}
+
+.detail p {
+  line-height: 2.0;
+  color: #222;
+}
+
+.detail>img {
+  float: left;
+  margin-right: 50px;
+  border-radius: 20px;
+}
+
+.schedule h4 {
+  font-size: 1.2em;
+}
+
+.schedule ul {
+  list-style: none;
+}
+
+.schedule ul li {
+  line-height: 2;
+}
+
+
+/******************/
+/*   푸터 영역    */
+/******************/
+
+footer {
+  width: 100%;
+  /* 너비 */
+  height: 100px;
+  /* 높이 */
+  border-top: 1.5px solid rgb(120, 120, 120);
+
+}
+
+#bottomMenu {
+  width: 100%;
+  height: 20px;
+}
+
+#bottomMenu ul {
+  margin-top: 15px;
+  text-align: center;
+  /* ------------------------------------------------------------------------------------- */
+
+}
+
+#bottomMenu ul li {
+  /* float:left */
+  /* ------------------------------------------------------------------------------------- */
+  display: inline-block;
+  /* ------------------------------------------------------------------------------------- */
+  /* 가로로 배치 */
+  padding: 5px 20px;
+  border-right: 0.2px solid #ddd;
+  /* 항목 오른쪽에 테두리 */
+}
+
+#bottomMenu ul li:last-child {
+  border: none;
+  /* 마지막 항목에는 오른쪽 테두리 없음 */
+}
+
+#bottomMenu ul li a,
+#bottomMenu ul li a:visited {
+  font-size: 14px;
+  /* 글자 크기 */
+  color: #666;
+  /* 글자 색 */
+
+}
+
+/*top-ten*/
+#topTen{
+  width: 100%;
+  height: 500px;
+}
+
+.container {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  /* display: inline-flex; */
+}
+
+#topTen > ul {
+  width: 100%;
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+/* h1 {
+  font: bold 42px "굴림", Gulim;
+  background: lightgray;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 5px;
+} */
+
+
+.gallery li {
+  float: left;
+}
+
+.image > img {
+  width: 150px;
+  height: 150px;
+  margin-right: 90px;
+  border: 1px solid #bbb
+}
+
+.image > h5 {
+  margin-top: 10px;
+}
+
+
+/*슬라이드바*/
+.section input[id*="slide"] {
+  display: none;
+}
+
+.section .slidewrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section .slidelist {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.section .slidelist>li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .5s;
+}
+
+.section .slidelist>li>a {
+  display: block;
+  position: relative;
+}
+
+.section .slidelist>li>a img {
+  width: 100%;
+}
+
+.section .slidelist label {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  cursor: pointer;
+}
+
+.section .slidelist .textbox {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.section .slidelist .textbox h3 {
+  font-size: 36px;
+  color: #fff;
+  ;
+  transform: translateY(30px);
+  transition: all .5s;
+}
+
+.section .slidelist .textbox p {
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all .5s;
+}
+
+
+
+/* input에 체크되면 슬라이드 효과 */
+.section input[id="slide01"]:checked~.slidewrap .slidelist>li {
+  transform: translateX(0%);
+}
+
+.section input[id="slide02"]:checked~.slidewrap .slidelist>li {
+  transform: translateX(-100%);
+}
+
+.section input[id="slide03"]:checked~.slidewrap .slidelist>li {
+  transform: translateX(-200%);
+}
+
+/* input에 체크되면 텍스트 효과 */
+.section input[id="slide01"]:checked~.slidewrap li:nth-child(1) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .2s;
+}
+
+.section input[id="slide01"]:checked~.slidewrap li:nth-child(1) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .4s;
+}
+
+.section input[id="slide02"]:checked~.slidewrap li:nth-child(2) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .2s;
+}
+
+.section input[id="slide02"]:checked~.slidewrap li:nth-child(2) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .4s;
+}
+
+.section input[id="slide03"]:checked~.slidewrap li:nth-child(3) .textbox h3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .2s;
+}
+
+.section input[id="slide03"]:checked~.slidewrap li:nth-child(3) .textbox p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: .4s;
+}
+
+/* 좌,우 슬라이드 버튼 */
+.slide-control>div {
+  display: none;
+}
+
+.section .left {
+  left: 30px;
+  background: url('./left.png') center center / 100% no-repeat;
+}
+
+.section .right {
+  right: 30px;
+  background: url('./right.png') center center / 100% no-repeat;
+}
+
+.section input[id="slide01"]:checked~.slidewrap .slide-control>div:nth-child(1) {
+  display: block;
+}
+
+.section input[id="slide02"]:checked~.slidewrap .slide-control>div:nth-child(2) {
+  display: block;
+}
+
+.section input[id="slide03"]:checked~.slidewrap .slide-control>div:nth-child(3) {
+  display: block;
+}
+
+/* 페이징 */
+.slide-pagelist {
+  text-align: center;
+  padding: 20px;
+}
+
+.slide-pagelist>li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slide-pagelist>li>label {
+  display: block;
+  padding: 8px 30px;
+  border-radius: 30px;
+  background: #ccc;
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.section input[id="slide01"]:checked~.slidewrap .slide-pagelist>li:nth-child(1)>label {
+  background: #999;
+}
+
+.section input[id="slide02"]:checked~.slidewrap .slide-pagelist>li:nth-child(2)>label {
+  background: #999;
+}
+
+.section input[id="slide03"]:checked~.slidewrap .slide-pagelist>li:nth-child(3)>label {
+  background: #999;
+}

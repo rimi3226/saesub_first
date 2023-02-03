@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!--사이트 아이콘-->
+    <link rel="icon" href="/icons/favicon.ico">
+    <meta charset="UTF-8">
+    <title>나만의 레시피, 나만의 창작물, 크레파스</title>
+    <link rel="stylesheet" href="/style/haeun.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <!-- 로고 넣기-->
+            <div id="logo">
+                <h1>crayon</h1>
+
+                <div id="search">
+                    <input type="text" placeholder="키워드, 태그, 커미션주 검색">
+                    <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+                </div>
+
+                <h3 id="login"><a href = "#">로그인</a></h3>
+            </div>
+
+            <!-- 상단 메뉴 바 만들기-->
+            <nav>
+                <ul id="topMenu">
+                    <li><a href="#">#그림</a></li>
+                    <li><a href="#">#굿즈</a></li>
+                    <li><a href="#">#디자인</a></li>
+                    <li><a href="#">#기타</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--웹문서의 핵심! 내용 넣기-->
+        <main class="contents">
+
+            <!--슬라이드 만들기-->
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <div class="slidewrap">
+
+                    <ul class="slidelist">
+                        <!-- 슬라이드 영역 -->
+                        <li class="slideitem">
+                            <a>
+                                <img src="/images/banner_01.png">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+                                <img src="/images/banner_02.png">
+                            </a>
+                        </li>
+                        <li class="slideitem">
+                            <a>
+
+                                <div class="textbox">
+
+                                </div>
+                                <img src="/images/banner_03.png">
+                            </a>
+                        </li class="slideitem">
+
+                        <!-- 좌,우 슬라이드 버튼 -->
+                        <div class="slide-control">
+                            <div>
+                                <label for="slide03" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div>
+                                <label for="slide02" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+                        </div>
+
+                    </ul>
+                    <!-- 페이징 -->
+                    <ul class="slide-pagelist">
+                        <li><label for="slide01"></label></li>
+                        <li><label for="slide02"></label></li>
+                        <li><label for="slide03"></label></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--내용 1-->
+
+            <section id="topTen">
+                <h3>인기 Top 10 커미션</h3>
+
+                <ul class="gallery">
+                    <li class="image"><img src="/images/pochacco.png">
+                        <h5>판매자</h5>
+                        <h3>제목</h3>
+                    </li>
+                    <li class="image"><img src="/images/pochacco_1.png">
+                        <h5>판매자</h5>
+                        <h3>제목</h3>
+                    </li>
+                    <li class="image"><img src="/images/pochacco_2.png">
+                        <h5>판매자</h5>
+                        <h3>제목</h3>
+                    </li>
+                    <li class="image"><img src="/images/pochacco4.jpg">
+                        <h5>판매자</h5>
+                        <h3>제목</h3>
+                    </li>
+
+                    <li class="image"><img src="/images/pochacco5.jpg">
+                        <h5>판매자</h5>
+                        <h3>제목</h3>
+                    </li>
+                </ul>
+
+            </section>
+        </main>
+
+        <!--사이트 소개/정보 등등... 하단 바-->
+        <footer>
+            <section id="bottomMenu">
+                <ul id=banner>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">도움센터</a></li>
+                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                </ul>
+            </section>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
