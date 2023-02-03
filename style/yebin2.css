@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.join .top { position: relative; width: 450px; }
+.join .top li { padding: 0 0 15px; }
+.join .top li label { display: inline-block; width: 120px; font-size: 15px; color: #464646; font-family: dotum; font-weight: bold; }
+.join .top li input[type="text"],
+.join .top li input[type="password"]{ width: 250px; height: 29px; padding: 0; border-color: #d9d9d9; }
+.join .top li.btn1 { position: absolute; right: 0; top: 48px; font-size: 4; color: #000000; font-weight: bold; }
+.join .top li a { display: block; width:60px; height:20px; background: #b7b7b7; border: 1px solid #6e6e6e; font-size: 13px; color: #fff; text-align: center; line-height: 69px; font-weight: bold; }
+
