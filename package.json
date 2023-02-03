@@ -1,0 +1,23 @@
+{
+  "name": "saesub_first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slideshow.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rimi3226/saesub_first.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rimi3226/saesub_first/issues"
+  },
+  "homepage": "https://github.com/rimi3226/saesub_first#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

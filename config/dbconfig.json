@@ -1,0 +1,8 @@
+{
+    "host": "127.0.0.1",
+    "user" : "root",
+    "password" : "gyfla3226",
+    "database" : "Sign",
+    "port": "3306"
+}
+
