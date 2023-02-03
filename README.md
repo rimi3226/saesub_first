@@ -1,13 +1,16 @@
 # 새숲담담 프로젝트 첫번째
 작가와 고객을 이어주는 쇼핑몰 사이트 제작
 
-
+## Start
+* /html/haeun.html 실행
+-> 로그인, 구매자 화면 확인 가능 (a태그로 구현)
+* /html/hyolim.html 실행
+-> 판매자 화면 확인가능
 ## Team Members
-* [**rimi3226**](https://github.com/rimi3226)
-* [**moon-subin**](https://github.com/moon-subin) 
-* [**hani0903**](https://github.com/lightpipo-cre20) 
-* [**Yeebiin**](https://github.com/Yeebiin) 
-
+* [**rimi3226**](https://github.com/rimi3226) (판매자 화면 구현)
+* [**moon-subin**](https://github.com/moon-subin) (구매자 화면, 마이페이지 구현)
+* [**hani0903**](https://github.com/lightpipo-cre20) (메일 페이지 구현)
+* [**Yeebiin**](https://github.com/Yeebiin) (로그인, 회원가입 구현)
 
 ## Folder Structure
 * front-end (개발 진행중)
@@ -30,10 +33,3 @@
   * pakage-lock.json
   * pakage.json
   * svr.js (코딩X, 서버 잘 돌아가는지 확인용 파일)
-  
-  
-## Start
-* /html/haeun.html 실행
--> 로그인, 구매자 화면 확인 가능 (a태그로 구현)
-* /html/hyolim.html 실행
--> 판매자 화면 확인가능
