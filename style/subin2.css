@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+
+* {
+    margin: 0;  /* 마진값 초기화 */
+    padding: 0; /* 패딩값 초기화 */
+    box-sizing: border-box; /* 박스 영역은 테두리까지 지정 */
+}
+a {
+    text-decoration: none;
+}
+#container {
+    margin: 0 auto; /* 화면 중앙에 배치 */
+    width: 1400px;  /* 너비 지정 */
+}
+
+/* 헤더 영역 */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(226, 208, 228);
+}
+
+/* 로고 영역 */
+#logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 50px;
+}
+#logo h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    text-shadow: 0 -apx 0 #222;
+}
+
+#seller {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    /* background-color: green; */
+}
+
+#request {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    /* background-color: gray; */
+}
+
+#apply {
+    clear: both;
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /* background-color: skyblue */
+}
+
+
+
+
+
+
+.txtfield.big{
+	height: 150px;
+}
+.title_content.big{
+	height: 150px;
+}
+.title_content{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
+.txtfield{
+		flex: 1;
+    background-color: white;
+    width: 300px;
+    height: 38px;
+    font-size: 13px;
+    padding: 10px;
+    box-sizing: border-box;
+		
+}
