@@ -1,163 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap');
+/*폰트 - 영어*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR:wght@500&family=Roboto+Mono:wght@300&display=swap');
+
+/*폰트 - 한글*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR:wght@300&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 
 * {
-    margin: 0;  /* 마진값 초기화 */
-    padding: 0; /* 패딩값 초기화 */
-    box-sizing: border-box; /* 박스 영역은 테두리까지 지정 */
+    margin: 0;
+    /* 마진 리셋 */
+    padding: 0;
+    /* 패딩 리셋 */
+    /*font-family: FiraCode;*/
+    box-sizing: border-box;
+    /* 박스 영역은 테두리까지 */
+  
+    /*폰트 설정*/
+    font-family: 'Noto Sans KR', sans-serif;
+  
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
+  /* 텍스트 링크 밑줄 없애기 */
 }
+
+ul {
+  list-style: none;
+}
+
+/*바디 전체*/
 #container {
-    margin: 0 auto; /* 화면 중앙에 배치 */
-    width: 1400px;  /* 너비 지정 */
+  margin: 0 auto;
+  /* 화면 중앙에 배치 */
+  width: 100%;
+  /* 너비 */
+  background-color: rgb(255, 255, 255);
 }
 
-/* 헤더 영역 */
+/*********************************/
+/* 헤더 영역 - 로고와 내비게이션 */
+/*********************************/
+
 header {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(226, 208, 228);
+  width: 100%;
+  /*  너비 */
+  height: 100px;
+  /* 높이 */
 }
 
-/* 로고 영역 */
+/* 로고 */
 #logo {
-    float: left;
-    width: 250px;
-    height: 100px;
-    line-height: 100px;
-    padding-left: 50px;
-}
-#logo h1 {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-weight: 700;
-    font-size: 40px;
-    color: black;
-    text-shadow: 0 -apx 0 #222;
+  /* 왼쪽으로 플로팅 */
+  width: 100%;
+  /*  너비 */
+  height: 50px;
+  /* 높이 */
+  line-height: 50px;
+  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+  padding-left: 150px;
+  /* 왼쪽에 여백 */
+
+  background-color: rgb(220, 224, 255);
+
 }
 
-/* 내비게이션 영역 */
-nav {
-    float: right;
-    width: 1100px;
-    height: 100px;
-    /* background-color: green; */
+/*로고 폰트/색상*/
+#logo h1 {
+  float: left;
+  /*font-family: 'Merienda', cursive;*/
+  /* font-family: 'Lora', serif; */
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-weight: 700;
+  font-size: 35px;
+  /* 글자 크기 */
+  color: #fff;
+  /* 글자 색*/
+  /*text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+  /* margin-right: 100px; */
 }
+
+#login{
+  float: right;
+  font-weight: 400;
+  padding-right: 150px;
+}
+
+#logo {
+  display: inline-block;
+  position: relative;
+  border-bottom: 0.5px solid rgb(205, 205, 205);
+}
+
+/* ------------------------------------------------------------------------------------- */
+#search {
+  margin-left: 52%;
+  display: inline-block;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------------------------- */
+#logo #search img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+input {
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  padding: 1px 13px;
+  font-size: 14px;
+  width: 300px;
+  height: 40px;
+  font-weight: 200;
+}
+
+img {
+  position: relative;
+  width: 15px;
+  top: 10px;
+  /* margin: 0; */
+  margin-top: 2px;
+}
+
+/* 내비게이션 태그*/
+nav {
+  float: right;
+  /* 오른쪽으로 플로팅 */
+  width: 100%;
+  /*   너비 */
+  height: 50px;
+  /* 메뉴 영역 높이 */
+
+  /*중간에 맞추기*/
+  line-height: 50px;
+
+  /* 메뉴를 로고와 맞추기 */
+  padding-left: 150px;
+  border-bottom: 0.5px solid rgb(205, 205, 205);
+  /* background-color: rgb(183, 190, 248); */
+}
+
+/*id : topMenu*/
+#topMenu {
+  height: 50px;
+}
+
+#topMenu>li {
+  float: left;
+  /* 메뉴 항목을 왼쪽으로 플로팅 */
+  position: relative;
+}
+
+/*상단메뉴 설정*/
+#topMenu>li>a {
+  display: block;
+  /* 링크 텍스트는 블록으로 */
+  font-size: 1.1em;
+  color: rgb(175, 177, 183);
+  /* 글자 색 */
+  font-weight: 500;
+  /* 글자 굵기 */
+  /* 패딩 */
+  padding-right: 70px;
+}
+
+#topMenu>li>a:hover {
+  color: #8a86cc;
+  /*text-shadow:0 -2px #222;*/
+}
+
+
+
+
+/*---------------*/
 
 /* 콘텐츠 영역 */
 #contents {
-    width: 100%;
-    height: 600px;
+  width: 100%;
+  height: 600px;
 }
 
 #slideShow {
-    float: left;
-    width: 600px;
-    height: 400px;
-    margin-left: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /* background-color: orange; */
-    overflow: hidden;
-    /* position: relative; */
+  float: left;
+  width: 600px;
+  height: 400px;
+  margin-left: 150px;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  /* background-color: orange; */
+  overflow: hidden;
+  /* position: relative; */
 
-    text-align:center;
-    display:table;
-    border: none;
-    /* width:500px; */
-    /* height:500px; */
+  text-align:center;
+  display:table;
+  /* border: none; */
+  /* width:500px; */
+  /* height:500px; */
 }
 #slides {
-    position:relative;
-    display:table-cell;
-    vertical-align:middle;
+  position:relative;
+  display:table-cell;
+  vertical-align:middle;
 }
 #slides > img {
-    /* width: 500px; */
-    /* height: 100%; */
-    /* float: left; */
-    max-width:250px;
-    max-height:100%;
-    margin:auto;
+  /* width: 500px; */
+  /* height: 100%; */
+  /* float: left; */
+  max-width:250px;
+  max-height:100%;
+  margin:auto;
 }
 button {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    border: none;
-    padding: 20px;
-    background-color: transparent;
-    color: #000;
-    font-weight: 800;
-    font-size: 24px;
-    opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  color: #000;
+  font-weight: 800;
+  font-size: 24px;
+  opacity: 0.5;
 }
 #prev {
-    left: 0;
+  left: 0;
 }
 #next {
-    right: 0;
+  right: 0;
 }
 button:hover {
-    background-color: #222;
-    color: #fff;
-    opacity: 0.6;
-    cursor: pointer;
+  background-color: #43434341;
+  color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
 }
 button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 #descript {
-    float: right;
-    width: 700px;
-    height: 600px;
-    /* background-color: gray; */
+  float: right;
+  margin-right: 150px;
+  margin-top: 100px;
+  /* margin-bottom: 50px; */
+  width: 600px;
+  height: 400px;
+  /* background-color: gray; */
+  border:10px rgb(117, 64, 138);
 }
 
 #apply {
-    clear: both;
-    width: 100%;
-    height: 100px;
-    margin-bottom: 100px;
-    /* background-color: skyblue; */
-}
-
-.color {
-    width: 350px;
-    margin: 0 auto;
-}
-.color li {
-    margin: 0 15px 0 0;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    border-radius: 100%;
-}
-.color.purple {background: #cb99c5;}
-
-.applyBtn {
-    position: relative;
-    border: 0;
-    padding: 15px 25px;
-    display: inline-block;
-    text-align: center;
-    color: black;
-}
-.applyBtn.block {
-  display: block;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  clear: both;
+  width: 100%;
+  height: 100px;
+  /* background-color: skyblue; */
   text-align: center;
 }
-.applyBtn:active {
-    top: 4px; 
-}
 
-.applyBtn.purple {
-    box-shadow:0px 4px 0px #AD83A8;
-}
-.applyBtn.purple:active {
-    box-shadow: 0 0 #BA8CB5; background-color: #BA8CB5;
-}
