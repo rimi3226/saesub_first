@@ -8,35 +8,35 @@
 
 
 * {
-  margin: 0;
-  /* 마진 리셋 */
-  padding: 0;
-  /* 패딩 리셋 */
-  /*font-family: FiraCode;*/
-  box-sizing: border-box;
-  /* 박스 영역은 테두리까지 */
+    margin: 0;
+    /* 마진 리셋 */
+    padding: 0;
+    /* 패딩 리셋 */
+    /*font-family: FiraCode;*/
+    box-sizing: border-box;
+    /* 박스 영역은 테두리까지 */
 
-  /*폰트 설정*/
-  font-family: 'Noto Sans KR', sans-serif;
+    /*폰트 설정*/
+    font-family: 'Noto Sans KR', sans-serif;
 
 }
 
 a {
-  text-decoration: none;
-  /* 텍스트 링크 밑줄 없애기 */
+    text-decoration: none;
+    /* 텍스트 링크 밑줄 없애기 */
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 /*바디 전체*/
 #container {
-  margin: 0 auto;
-  /* 화면 중앙에 배치 */
-  width: 100%;
-  /* 너비 */
-  background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    /* 화면 중앙에 배치 */
+    width: 100%;
+    /* 너비 */
+    background-color: rgb(255, 255, 255);
 }
 
 /*********************************/
@@ -44,318 +44,228 @@ ul {
 /*********************************/
 
 header {
-  width: 100%;
-  /*  너비 */
-  height: 100px;
-  /* 높이 */
-  
+    width: 100%;
+    /*  너비 */
+    height: 100px;
+    /* 높이 */
+
 }
 
 /* 로고 */
 #logo {
-  /* 왼쪽으로 플로팅 */
-  width: 100%;
-  /*  너비 */
-  height: 50px;
-  /* 높이 */
-  line-height: 50px;
-  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
-  padding-left: 150px;
-  /* 왼쪽에 여백 */
+    /* 왼쪽으로 플로팅 */
+    width: 100%;
+    /*  너비 */
+    height: 50px;
+    /* 높이 */
+    line-height: 50px;
+    /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+    padding-left: 150px;
+    /* 왼쪽에 여백 */
 
-  background-color: rgb(220, 224, 255);
+    background-color: rgb(220, 224, 255);
 
 }
 
 /*로고 폰트/색상*/
 #logo h1 {
-  float: left;
-  /*font-family: 'Merienda', cursive;*/
-  /* font-family: 'Lora', serif; */
-  font-family: 'Noto Sans KR', sans-serif;
-  /* font-family: 'Roboto Mono', monospace; */
-  font-weight: 700;
-  font-size: 35px;
-  /* 글자 크기 */
-  color: #fff;
-  /* 글자 색*/
-  /*text-shadow:0 -1px 0 #222;  /* 그림자 색 */
-  /* margin-right: 100px; */
+    float: left;
+    /*font-family: 'Merienda', cursive;*/
+    /* font-family: 'Lora', serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+    font-weight: 700;
+    font-size: 35px;
+    /* 글자 크기 */
+    color: #fff;
+    /* 글자 색*/
+    /*text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+    /* margin-right: 100px; */
 }
 
-#login{
-  float: right;
-  font-weight: 400;
-  padding-right: 150px;
-  padding-top:5px;
+#login {
+    float: right;
+    font-weight: 400;
+    padding-right: 150px;
+    padding-top: 5px;
 }
 
 #logo {
-  display: inline-block;
-  position: relative;
-  border-bottom: 0.5px solid rgb(205, 205, 205);
+    display: inline-block;
+    position: relative;
+    border-bottom: 0.5px solid rgb(205, 205, 205);
 }
 
 /* ------------------------------------------------------------------------------------- */
 #search {
-  margin-left: 52%;
-  display: inline-block;
-  position: relative;
+    margin-left: 52%;
+    display: inline-block;
+    position: relative;
 }
 
 /* ------------------------------------------------------------------------------------- */
 #logo #search img {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%)
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
 }
 
 /* ------------------------------------------------------------------------------------- */
 
 input {
-  border: 1px solid #bbb;
-  border-radius: 20px;
-  padding: 1px 13px;
-  font-size: 14px;
-  width: 300px;
-  height: 40px;
-  font-weight: 200;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    padding: 1px 13px;
+    font-size: 14px;
+    width: 300px;
+    height: 40px;
+    font-weight: 200;
 }
 
 img {
-  position: relative;
-  width: 15px;
-  top: 10px;
-  /* margin: 0; */
-  margin-top: 2px;
+    position: relative;
+    width: 15px;
+    top: 10px;
+    /* margin: 0; */
+    margin-top: 2px;
 }
 
 /* 내비게이션 태그*/
 nav {
-  float: right;
-  /* 오른쪽으로 플로팅 */
-  width: 100%;
-  /*   너비 */
-  height: 50px;
-  /* 메뉴 영역 높이 */
+    float: right;
+    /* 오른쪽으로 플로팅 */
+    width: 100%;
+    /*   너비 */
+    height: 50px;
+    /* 메뉴 영역 높이 */
 
-  /*중간에 맞추기*/
-  line-height: 50px;
+    /*중간에 맞추기*/
+    line-height: 50px;
 
-  /* 메뉴를 로고와 맞추기 */
-  padding-left: 150px;
-  border-bottom: 0.5px solid rgb(205, 205, 205);
-  /* background-color: rgb(183, 190, 248); */
+    /* 메뉴를 로고와 맞추기 */
+    padding-left: 150px;
+    border-bottom: 0.5px solid rgb(205, 205, 205);
+    /* background-color: rgb(183, 190, 248); */
 }
 
 /*id : topMenu*/
 #topMenu {
-  height: 50px;
+    height: 50px;
 }
 
 #topMenu>li {
-  float: left;
-  /* 메뉴 항목을 왼쪽으로 플로팅 */
-  position: relative;
+    float: left;
+    /* 메뉴 항목을 왼쪽으로 플로팅 */
+    position: relative;
 }
 
 /*상단메뉴 설정*/
 #topMenu>li>a {
-  display: block;
-  /* 링크 텍스트는 블록으로 */
-  font-size: 1.1em;
-  color: rgb(175, 177, 183);
-  /* 글자 색 */
-  font-weight: 500;
-  /* 글자 굵기 */
-  /* 패딩 */
-  padding-right: 70px;
+    display: block;
+    /* 링크 텍스트는 블록으로 */
+    font-size: 1.1em;
+    color: rgb(175, 177, 183);
+    /* 글자 색 */
+    font-weight: 500;
+    /* 글자 굵기 */
+    /* 패딩 */
+    padding-right: 70px;
 }
 
 #topMenu>li>a:hover {
-  color: #8a86cc;
-  /*text-shadow:0 -2px #222;*/
+    color: #8a86cc;
+    /*text-shadow:0 -2px #222;*/
 }
 
 
 /* 본문 */
 .contents {
-  width: 100%;
-  padding: 20px 150px;
+    width: 100%;
+    padding: 20px 150px;
 }
 
 main>section {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 main h2 {
-  font-size: 1.5em;
-  line-height: 2.5;
+    font-size: 1.5em;
+    line-height: 2.5;
 }
 
 main div {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 main h3 {
-  font-size: 1.2em;
-  line-height: 2.2;
+    font-size: 1.2em;
+    line-height: 2.2;
 }
 
 .detail p {
-  line-height: 2.0;
-  color: #222;
+    line-height: 2.0;
+    color: #222;
 }
 
 .detail>img {
-  float: left;
-  margin-right: 50px;
-  border-radius: 20px;
+    float: left;
+    margin-right: 50px;
+    border-radius: 20px;
 }
 
 .schedule h4 {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .schedule ul {
-  list-style: none;
+    list-style: none;
 }
 
 .schedule ul li {
-  line-height: 2;
+    line-height: 2;
 }
 
 
-/******************/
-/*   푸터 영역    */
-/******************/
-
-footer {
-  width: 100%;
-  /* 너비 */
-  height: 100px;
-  /* 높이 */
-  border-top: 1.5px solid rgb(120, 120, 120);
-
+/* CSS Hyolim */
+.title{
+    margin: 30px;
 }
 
-#bottomMenu {
-  width: 100%;
-  height: 20px;
-}
-
-#bottomMenu ul {
-  margin-top: 15px;
-  text-align: center;
-  /* ------------------------------------------------------------------------------------- */
-
-}
-
-#bottomMenu ul li {
-  /* float:left */
-  /* ------------------------------------------------------------------------------------- */
-  display: inline-block;
-  /* ------------------------------------------------------------------------------------- */
-  /* 가로로 배치 */
-  padding: 5px 20px;
-  border-right: 0.2px solid #ddd;
-  /* 항목 오른쪽에 테두리 */
-}
-
-#bottomMenu ul li:last-child {
-  border: none;
-  /* 마지막 항목에는 오른쪽 테두리 없음 */
-}
-
-#bottomMenu ul li a,
-#bottomMenu ul li a:visited {
-  font-size: 14px;
-  /* 글자 크기 */
-  color: #666;
-  /* 글자 색 */
-
-}
-
-/*top-ten*/
-#topTen{
-  width: 100%;
-  height: 500px;
-}
-
-.container {
-  flex-wrap: nowrap;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-
-li {
-  list-style-type: none;
-}
-
-
-
-.top {
-    position: sticky;
-    background-color: #c7c7f6;
-    width: 100%;
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.image {
-    float: left;
-    background-color: #7272ae;
-    margin-top: 30px;
-    width: 500px;
-    height: 400px;
-    color: aliceblue;
+.introduce {
+    width: 60%;
+    height: 20%;
+    background-color: rgb(220, 224, 255);
+    padding: 1%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 20%;
     text-align: center;
     display: flex;
-    margin-left: 100px;
-    flex-direction: column;
-    float: left;
-
+    justify-content: center;
 }
 
-.information {
-    padding: 30px;
-    margin-top: 30px;
-    margin-right: 100px;
-    float: right;
-    height: 400px;
-
-    background-color: #c8c8e9;
-
+.image_box{
+    width: 300px;
+    height: 280px;
+    border: none; 
+    
 }
 
-.button {
-    background-color: #b1aec7;
-    border-radius: 10px;
-    width: max-content;
-    margin-top: 50px;
-    margin-right: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    float: right;
-
+.box{
+    background-color: rgb(226, 227, 231);
+    width: 70px;
+    height: 280px;
+    padding:10px;
+    border: 10px solid white;
 }
 
-.text {
-    padding-left: 10px;
-    width: 400px;
-    float: right;
-    margin-left: 20px;
+.information{
+    margin-top: 10px;
 }
 
-.upload{
-    margin-top: 1%;
-    text-align: center;
+.explanation{
+    width: 560px;
+    height: 375px;
+    border-color: #dad9d9;
 }
