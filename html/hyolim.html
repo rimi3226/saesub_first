@@ -2,93 +2,154 @@
 <html lang="en">
 
 <head>
-  <title>판매자 페이지</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="/style/hyolim.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>판매자 페이지</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="/style/hyolim.css">
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div id="container">
+
     <!-- 상단 헤더 만들기 -->
     <header>
-      <!-- 로고 넣기-->
-      <div id="logo">
-        <a href="/html/haeun.html">
-          <h1>SaeSoop</h1>
-        </a>
-        <div id="search">
-          <input type="text" placeholder="키워드, 태그, 커미션주 검색">
-          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+        <!-- 로고 넣기-->
+        <div id="logo">
+            <a href="/html/haeun.html">
+                <h1>SaeSoop</h1>
+            </a>
+            <div id="search">
+                <input type="text" placeholder="키워드, 태그, 작가 검색">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </div>
+
+            <h3 id="login"><a href="/html/yebin.html">로그인</a></h3>
         </div>
 
-        <h3 id="login"><a href="/html/yebin.html">로그인</a></h3>
-      </div>
-
-      <!-- 상단 메뉴 바 만들기-->
-      <nav>
-        <ul id="topMenu">
-          <li><a href="#">#그림</a></li>
-          <li><a href="#">#굿즈</a></li>
-          <li><a href="#">#디자인</a></li>
-          <li><a href="#">#기타</a></li>
-        </ul>
-      </nav>
+        <!-- 상단 메뉴 바 만들기-->
+        <nav>
+            <ul id="topMenu">
+                <li><a href="#">#그림</a></li>
+                <li><a href="#">#굿즈</a></li>
+                <li><a href="#">#디자인</a></li>
+                <li><a href="#">#기타</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- 작품 등록 화면 설명 -->
-    <div class="upload">
-      <h2>작품 등록하기</h2>
-
-    </div>
-
-    <!-- 작품 사진 -->
     <div>
-
-      <div class="image">
-        <br>
-        <h3>이미지를 등록하세요.</h3>
-      </div>
-
-      <!-- 작품 설명 -->
-      <div class="upload">
-        <div class="information">
-          <div class="mb-3">
-            <label class="form-label">작품명</label>
-            <input type="text" class="text">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">금액</label>
-            <input type="text" class="text">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">상품상세설명</label>
-            <input type="text" class="text">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">주의사항</label>
-            <input type="text" class="text">
-          </div>
-          <hr>
-        </div>
-      </div>
-
-
+        <h2 class="title text-center ">작품 등록하기</h2>
     </div>
-  </div>
-  <input type="submit" value="작품 등록" class="button">
 
+    <div class="rounded introduce">
+        작품을 SaeSoop에 올릴 수 있는 페이지입니다.
+        <br>
+        SaeSoop 이용자들은 SaeSoop 판매자가 올린 작품을 보고 신청하고, 관련 통계도 타입별로 나타나게 돼요.
+    </div>
+
+    <!-- 내용 (사진, 정보 입력) -->
+    <div class="grid grid-cols-4 mt-8 gap-8 gap-4">
+        <div class="container text-center">
+            <div class="row">
+
+                <div class="container text-center">
+                    <!-- title -->
+                    <br>
+                    <br>
+                    <div class="row">
+                        <hr>
+                        <div class="col-6">
+                            < 사진 등록>
+                        </div>
+                        <div class="col-6">
+                            < 작품정보 등록>
+                        </div>
+
+                    </div>
+
+                    <!-- 사진 첨부 -->
+                    <br>
+                    <div class="row">
+                        <div class="col-3 box">
+                            <input accept="image/*" multiple type="file" tabindex="-1" class="image_box">
+                        </div>
+                        <div class="col-3 box">
+                            <input accept="image/*" multiple type="file" tabindex="-1" class="image_box">
+                        </div>
+
+                        <!-- 정보 입력 -->
+                        <div class="col-sm-6">
+                            <div class="input-group input-group-sm mb-3 information">
+                                <span class="input-group-text">작품명</span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 information">
+                                <span class="input-group-text">작품 태그</span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group input-group-sm mb-3 information">
+                                <span class="input-group-text">최소 신청 금액</span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-text">최대 예상 금액(선택)</span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group input-group-sm mb-3  information" style="height: 90px;">
+                                <span class="input-group-text">작품 정보</span>
+                                <textarea cols="50" rows="10" class="explanation"></textarea>
+                                <!-- <input type="text" class="form-control" style="height: 90px;"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 사진 첨부 -->
+                    <div class="row">
+                        <div class="col-3 box">
+                            <input accept="image/*" multiple type="file" tabindex="-1" class="image_box">
+                        </div>
+                        <div class="col-3 box">
+                            <input accept="image/*" multiple type="file" tabindex="-1" class="image_box">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    제출하기
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                판매 양식 제출되었습니다. 감사합니다.
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
-</html>
+</html>ㄴ
