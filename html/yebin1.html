@@ -7,16 +7,16 @@
 <link rel="stylesheet" href="/style/yebin1.css">
 </head>
 <body>
-	<form action="" method="post">
+	<form action="http://localhost:3000/process/login" method="post">
 		<fieldset>
 			<legend>로그인</legend>
 			
 			<div class="login">
 				<h2>로 그 인</h2>
 				<ul class="top">
-					<li><label for="txt1">ID</label><input type="text" id="txt1"></li>
-					<li><label for="txt2">PASSWORD</label><input type="password" id="txt2"></li>
-					<li class="btn"><a href="#a">LOGIN</a></li>
+					<li><label for="txt1">ID</label><input type="text" name="id" id="txt1"></li>
+					<li><label for="txt2">PASSWORD</label><input type="password" name='password' id="txt2"></li>
+					<li class="btn"><button>LOGIN</button></li>
 				</ul>
 				<ul class="mid">
 					<li class="save"><input type="checkbox" id="chk1"><label for="chk1">로그인 상태 유지</label></li>
@@ -24,11 +24,7 @@
 			</div>
 				<div class="find">
 				<ul>
-					<!--
-					<li><a href="">회원가입</a></li>
-					<li><a href="">아이디 찾기</a></li>
-					<li><a href="">비밀번호 찾기</a></li> -->
-					<li><a href="">회원가입</a></li>
+					<li><a href="/html/yebin2.html">회원가입</a></li>
 					<li><a href="">아이디 찾기</a></li>
 					<li><a href="">비밀번호 찾기</a></li>
 				</ul>

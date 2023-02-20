@@ -8,7 +8,7 @@
 </head>
 <body>
     
-	<form action="" method="post">
+	<form action="http://localhost:3000/process/adduser" method="post">
 		<fieldset>
 			<legend>회원가입</legend>
 			<div class="profile">
@@ -18,13 +18,13 @@
 			</div>
 			<div class="join">
 				<ul class="top">
-					<li><label for="txt0">닉네임</label><input type="text" id="txt0"></li>
-					<li><label for="pnumber">전화번호</label><input type="text" id="pnumber"></li>
+					<li><label for="txt0">닉네임</label><input type="text" id="txt0" name="name"></li>
+					<li><label for="pnumber">전화번호</label><input type="text" id="pnumber" name="pnumber"></li>
 					<a href="#a" class="pncheck">본인확인</a>
-					<li><label for="txt1">아이디</label><input type="text" id="txt1"></li> 
+					<li><label for="txt1">아이디</label><input type="text" id="txt1" name="id" ></li> 
 					<a href="#a" class="idcheck">중복확인</a>
-					<li><label for="txt2">비밀번호</label><input type="password" id="txt2"></li>
-					<li><label for="txt3">비밀번호 확인</label><input type="password" id="txt2"></li>
+					<li><label for="txt2">비밀번호</label><input type="password" id="txt2" name="password"></li>
+					<li><label for="txt3">비밀번호 확인</label><input type="password" id="txt2" name="password2"></li>
 				</ul>
 			</div>
 			<div class="agree">

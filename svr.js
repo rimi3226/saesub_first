@@ -28,7 +28,7 @@ con.connect(function (err) {
 const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use('/public', static(path.join(__dirname, 'public')))
+app.use('/html', static(path.join(__dirname, 'html')))
 
 
 //port 3000에서 html로부터 POST 받기
@@ -44,12 +44,12 @@ app.post('/process/adduser', (req, res) => {
     //전달 온 개인정보들
     const paramId = req.body.id;
     const paramName = req.body.name;
-    const paramAge = req.body.age;
+    const paramPNumber = req.body.pnumber;
     const paramPassword = req.body.password;
 
     //NodeJS -> SQL : Query 전송 (데이터 입력)
-    const exec = con.query('insert into `Sign`.`users` (`id`,`name`,`age`,`password`) values(?,?,?,?)',
-        [paramId, paramName, paramAge, paramPassword],
+    const exec = con.query('insert into `Saesoop`.`users` (`id`,`name`,`pnumber`,`password`) values(?,?,?,?)',
+        [paramId, paramName, paramPNumber, paramPassword],
         (err, result) => {
 
             //Error
@@ -66,11 +66,11 @@ app.post('/process/adduser', (req, res) => {
             //Success
             if (result) {
                 console.log('Inserted 성공')
-                console.log(paramId + ' ' + paramName + ' ' + paramAge + ' ' + paramPassword)
+                console.log(paramId + ' ' + paramName + ' ' + paramPNumber + ' ' + paramPassword)
                 res.writeHead('200', { 'Content-Type': 'text/html; charset=utf8' })
                 res.write('<h2> 회원가입 성공 </h2>')
-                res.write('<a href="http://127.0.0.1:3001/sign_up_in/public/login.html">로그인 페이지로 돌아가기</a>')
-                res.end()
+                res.write('<a href="http://127.0.0.1:5501/html/yebin2.html">회원가입 페이지로 돌아가기</a>')
+                res.end() 
                 return;
             } else {
                 console.log('Inserted 실패')
@@ -93,7 +93,7 @@ app.post('/process/login', (req, res) => {
     const paramPassword = req.body.password;
 
     //NodeJS -> SQL ->: Query 전송 (데이터 일치 확인)
-    const exec = con.query('select `id`,`name` from `Sign`.`users` where `id`=? and `password`=?',
+    const exec = con.query('select `id`,`name` from `Saesoop`.`users` where `id`=? and `password`=?',
         [paramId, paramPassword],
         (err, result) => {
             
@@ -113,14 +113,15 @@ app.post('/process/login', (req, res) => {
                 console.log(paramId + '님이 로그인하셨습니다.')
                 res.writeHead('200', { 'Content-Type': 'text/html; charset=utf8' })
                 res.write('<h2> 로그인 성공 </h2>')
-                res.write('<a href="http://127.0.0.1:3001/sign_up_in/public/login.html">로그인 페이지로 돌아가기</a>')
+                res.write('<a href="http://127.0.0.1:5501/html/yebin1.html#a">로그인 페이지로 돌아가기</a>')
                 res.end()
                 return;
             } else{
                 console.log('로그인 실패')
+                console.log(paramId);
                 res.writeHead('200', { 'Content-Type': 'text/html; charset=utf8' })
                 res.write('<h1>로그인 실패</h1>')
-                res.write('<a href="http://127.0.0.1:3001/sign_up_in/public/login.html">로그인 페이지로 돌아가기</a>')
+                res.write('<a href="http://127.0.0.1:5501/html/yebin1.html#a">로그인 페이지로 돌아가기</a>')
                 res.end();
             }
 
