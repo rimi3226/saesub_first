@@ -2,6 +2,7 @@ const express = require("express");
 const path = require('path');
 const static = require('serve-static');
 const mysql = require("./mysql");//mysql 폴더의 index.js를 갖고오기 위해
+const multer = require('multer');//이미지 업로드하기
 
 const app = express();
 
@@ -12,6 +13,64 @@ app.listen(3000, () => {
     //3000번 포트로 웹서버 실행하기
     console.log("Server started. port 3000.");
 });
+
+//----------------------------------------------------------------------
+
+// //디스크 저장소에 대한 객체 생성하기
+// const storage = multer.diskStorage({//디스크 저장소의 정의
+//     destination: function(req, file, cb){
+//         cb(null, 'uploads/')    //cd 콜백함수를 통해 전송된 파일 저장 디렉토리 설정
+//     },
+//     filename: function(req, file, cb){
+//         //cb(null, file.originalname) //cb 콜백함수를 통해 전송된 파일 이름 설정
+//         cb(null, new Date().valueOf() + path.extname(file.originalname)); //시스템 시간으로 파일 이름 설정
+//     }
+// })
+// const upload = multer({storage: storage}); //multer 객체 생성
+
+// // app.post('/profile', upload.single('photo'), function (req, res, next){
+// //     console.log(req.file)
+// //     console.log(req.body);
+// // })
+
+// //고객 정보 추가 라우터
+// app.post('/api/signUp', upload.single('profile'), async (req, res) => {
+
+//     console.log('/api/signUp executed...');
+//     console.log(req.body.nickName);
+//     console.log(req.body.phone);
+//     console.log(req.body.id);
+//     console.log(req.body.password);
+//     console.log(req.body.check);
+
+//     const param = {
+//         path: req.file.path,
+//         nick_name: req.body.nickName,
+//         id: req.body.id,
+//         password: req.body.password,
+//         phone: req.body.phone,
+//     };
+
+//     console.log(param);
+
+//     try {
+//         const result = await mysql.query('memberInsert', param);
+//         console.log('result is : ', result);
+//         // .catch((err) => {
+//         //     console.log('err occurred on /api/insert, error : ', err);
+//         // });
+//     } catch (error) {
+//         console.log('error.');
+//     }
+
+//     //res.send(result);
+//     //res.sendFile( __dirname + '/html/yebin2.html');
+//     res.send("<script>alert('회원가입을 완료하였습니다!'); window.location.replace('/')</script>")
+// })
+
+
+//----------------------------------------------------------------------
+
 
 //고객정보 조회 라우터
 app.get("/api/members", async (req, res) => {
@@ -97,3 +156,4 @@ app.post('/api/login', async (req, res) => {
     //res.send(logIn);
 
 })
+
