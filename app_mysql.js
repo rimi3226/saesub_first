@@ -80,12 +80,14 @@ app.post('/api/signUp', upload.single('profile'), async (req, res) => {
     console.log(req.body.check);
 
     const param = {
-        profile: req.file.filename,
-        nick_neam: req.body.nickName,
+        profile: req.file.path.replace(/\\/g, "/"),
+        nick_name: req.body.nickName,
         id: req.body.id,
         password: req.body.password,
         phone: req.body.phone,
     };
+
+    
 
     console.log(param);
 
@@ -122,8 +124,8 @@ app.get("/api/members", async (req, res) => {
 app.use(express.static('style'))
 app.use(express.static('images'))
 /* */
-app.use(express.static('uploads'))
-//app.use('/uploads', static(path.join(__dirname, 'uploads')))
+//app.use(express.static('uploads'))
+app.use('/uploads', static(path.join(__dirname, 'uploads')))
 
 /* */
 app.use(express.static('icons'))
@@ -142,7 +144,7 @@ app.get('/myPage', (req, res) => {
         //res.sendFile(__dirname + '/html/subin3.html');
     }
 
-    res.render(__dirname + '/html/subin3.html', {user});
+    res.render(__dirname + '/html/subin3.ejs', {user});
 
 
     //res.sendFile(__dirname + '/html/subin3.html');
