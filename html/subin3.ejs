@@ -1,0 +1,241 @@
+<!--{% extends "../_layout.html" %}-->
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이페이지</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/subin3.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo">
+          <a href="/html/haeun.html">
+            <h1>SaeSoop</h1>
+          </a>
+          <div id="search">
+            <input type="text" placeholder="키워드, 태그, 커미션주 검색" />
+            <img
+              src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png"
+            />
+          </div>
+
+          <!-- <h3 id="login"><a href = "#">..</a></h3>     -->
+          <!--프로필 사진 띄우기 ..   -->
+          <!-- <span class="material-symbols-rounded" onclick="location.href='mypage2.html'">
+                    account_circle
+                </span>  -->
+          <i
+            class="bi bi-person-circle"
+            style="font-size: 1.5rem; vertical-align: middle"
+            onclick="location.href='/html/subin3.html'"
+          ></i>
+        </div>
+
+        <!-- 상단 메뉴 바 만들기-->
+        <nav>
+          <ul id="topMenu">
+            <li><a href="#">#그림</a></li>
+            <li><a href="#">#굿즈</a></li>
+            <li><a href="#">#디자인</a></li>
+            <li><a href="#">#기타</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="main main-raised">
+        <div class="profile-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto">
+                <div class="profile">
+                  <div class="avatar">
+                    <img
+                      src="/cat.jpg"
+                      alt="Circle Image"
+                      class="img-raised rounded-circle img-fluid img-size"
+                      id="profile"
+                    />
+                  </div>
+                  <div class="name">
+                    <h3 class="title"><%= user_nick %></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="description text-center">
+              <p>자기소개해보자 ....... 뭘 팔고 .... 뭘 살 거고 ....</p>
+            </div>
+            <div class="text-center">
+              <ul class="nav nav-pills nav-pills-icons justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/hyolim.html">
+                    <span class="material-symbols-rounded"> sell </span>
+                    판매하기
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto">
+                <div class="profile-tabs">
+                  <ul
+                    class="nav nav-pills nav-pills-icons justify-content-center"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        href="#sales_his"
+                        role="tab"
+                        data-toggle="tab"
+                      >
+                        판매내역
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="#purchase_his"
+                        role="tab"
+                        data-toggle="tab"
+                      >
+                        구매내역
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content tab-space">
+              <div class="tab-pane active text-center gallery" id="sales_his">
+                <div class="product-list">
+                  <a href="#" class="product">
+                    <img src="/cat.jpg" class="his-img-size" />
+                    <div class="product-name">상품명</div>
+
+                    <a href="#" class="product">
+                      <img src="/cat.jpg" class="his-img-size" />
+                      <div class="product-name">상품명</div>
+
+                      <a href="#" class="product">
+                        <img src="/cat.jpg" class="his-img-size" />
+                        <div class="product-name">상품명</div>
+
+                        <a href="#" class="product">
+                          <img src="/cat.jpg" class="his-img-size" />
+                          <div class="product-name">상품명</div>
+
+                          <a href="#" class="product">
+                            <img src="/cat.jpg" class="his-img-size" />
+                            <div class="product-name">상품명</div>
+
+                            <a href="#" class="product">
+                              <img src="/cat.jpg" class="his-img-size" />
+                              <div class="product-name">상품명</div>
+                            </a>
+                          </a>
+                        </a>
+                      </a>
+                    </a>
+                  </a>
+                </div>
+              </div>
+
+              <div class="tab-pane text-center gallery" id="purchase_his">
+                <div class="product-list">
+                  <a href="#" class="product">
+                    <img src="/dog.jpg" class="his-img-size" />
+                    <div class="product-name">상품명</div>
+
+                    <a href="#" class="product">
+                      <img src="/dog.jpg" class="his-img-size" />
+                      <div class="product-name">상품명</div>
+
+                      <a href="#" class="product">
+                        <img src="/dog.jpg" class="his-img-size" />
+                        <div class="product-name">상품명</div>
+
+                        <a href="#" class="product">
+                          <img src="/dog.jpg" class="his-img-size" />
+                          <div class="product-name">상품명</div>
+
+                          <a href="#" class="product">
+                            <img src="/dog.jpg" class="his-img-size" />
+                            <div class="product-name">상품명</div>
+
+                            <a href="#" class="product">
+                              <img src="/dog.jpg" class="his-img-size" />
+                              <div class="product-name">상품명</div>
+                            </a>
+                          </a>
+                        </a>
+                      </a>
+                    </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+
+      document.getElementById("profile").src = "<%= profile %>";
+
+    </script>
+    <script
+      src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+      integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
